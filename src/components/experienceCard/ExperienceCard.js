@@ -22,12 +22,12 @@ export default function ExperienceCard({ cardInfo, isDark }) {
       <div className="experience-projects">
         {projs ? projs.map((prj, i) => (
           <div key={i} className="experience-proj" style={{ display: 'flex', marginBottom: '20px' }}>
-            {prj.videoID && (
+            {prj.videoID &&(
               <div className="video-container">
                 <iframe 
                   width="560"
                   height="315"
-                  src={`https://www.youtube.com/embed/${prj.videoID}`}
+                  src={`https://www.youtube.com/embed/${prj.videoID}?rel=0&controls=0&showinfo=0`}
                   //allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                   title={prj.title}
@@ -38,7 +38,8 @@ export default function ExperienceCard({ cardInfo, isDark }) {
               <h5>{prj.date} : {prj.title}</h5>
               <ul>
                 {prj.desc.map((description, index) => (
-                  <li key={index}>+ {description}</li>
+                  <li className={isDark ? "description dark-mode-text" : "description"} 
+                   key={index}>+ {description}</li>
                 ))}
               </ul>
               {prj.url && prj.url.includes
@@ -110,7 +111,13 @@ export default function ExperienceCard({ cardInfo, isDark }) {
         >
           {cardInfo.desc}
         </p>
-        <h5 className="experience-text-participated-projects">
+        <h5 
+          className={
+            isDark
+              ? "experience-text-participated-projects dark-mode-text"
+              : "experience-text-participated-projects"
+          }
+        >
         Participated Projects:
         </h5>
         <ul>

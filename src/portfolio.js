@@ -23,14 +23,15 @@ const greeting = {
   username: "Phuc-Binh Pham",
   title:(
     <>
-      Hi all, I'm Bình,
+      Hi all, I'm Binh,
       <br />
-      Phạm Phúc Bình
+      Phuc-Binh Pham
     </>
   ),
   subTitle: emoji(
-    "A passionate Unity Game Developer 🎮 having an experience of developing casual / hypercasual mobile game with Unity Engine."
+    "Enthusiastic Unity Game Developer 🎮 "
   ),
+  subTitle2: "Fueled by passion, awakened with coffee☕.",
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -144,7 +145,7 @@ const workExperiences = {
             "Designed and implemented 100 levels with intuitive hint, enhancing game complexity, player experience and satisfaction.",
             "Conducted comprehensive testing to identify and resolve bugs and gameplay issues before release, significantly improving game performance and stability."
           ],
-          url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
+          url: "https://play.google.com/store/apps/details?id=com.fc.be.pl.snake.worm.apple",
           videoID: "B23FbYgn640"
         },
         {
@@ -154,8 +155,8 @@ const workExperiences = {
             "Design and develop weapon and item systems, sound, and effects.",
             "Build games to Android platform, conducted testing, and resolved issues for optimal performance."
           ],
-          url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
-          videoID: "B23FbYgn640"
+          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
+          //videoID: "B23FbYgn640"
         },
         {
           title: "Two Player Arcade Games",

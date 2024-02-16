@@ -32,11 +32,13 @@ export default function Greeting() {
               <p
                 className={
                   isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
+                    ? "greeting-text-p dark-mode"
+                    : "greeting-text-p"
                 }
               >
                 {greeting.subTitle}
+                <br></br>
+                {greeting.subTitle2}
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
@@ -55,7 +57,7 @@ export default function Greeting() {
             {illustration.animated ? (
               <DisplayLottie animationData={devPerson} />
             ) : (
-              <img
+              <img 
                 alt="Unity developer"
                 // src={require("../../assets/images/developer.svg")}
               ></img>
