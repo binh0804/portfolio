@@ -45,7 +45,7 @@ export default function ExperienceCard({ cardInfo, isDark }) {
               {/* Tech used */}
               {prj.tech && prj.tech.includes ?
               <h5 className={isDark ? "tech-stack dark-mode-text" : "tech-stack"}>
-                Skills:
+                {/* Skills: */}
                 {prj.tech.map((usedTechnology, index) => (
                   <span key={index} className
                     ={isDark ? "tech-span dark-mode-text" : "tech-span"}

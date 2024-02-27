@@ -93,11 +93,11 @@ const educationInfo = {
       schoolName: "HCMC University of Technology and Education",
       logo: require("./assets/images/hcmuteLogo.png"),
       subHeader: "Bachelor of Infomation Technology",
-      duration: "October 2020 - July 2024",
-      desc: "CGPA: 9.20/10.0 (equivalent to 3.65/4.0). Ranked top 5% in the program.",
+      duration: "October 2020 - Expected July 2024",
+      desc: "GPA: 9.18/10 (~3.65/4.0)",
       descBullets: [
-        "Achieved the academic scholarship for 4 out of 7 semesters",
-        "Achieved the title of \"Student of 5 Merits\" in 2020 and 2021"
+        // "Achieved the academic scholarship for 4 out of 7 semesters",
+        // "Achieved the title of \"Student of 5 Merits\" in 2020 and 2021"
       ]
     }
   ]
@@ -142,20 +142,29 @@ const workExperiences = {
           title: "Two Player Arcade Games",
           date: "Nov 2022 - Feb 2024",
           desc: [
-            "Collaborated with Product Owners, Game Designers, Artists, and QA teams to develop engaging two-player competitive minigames, ensuring gameplay was polished and aligned with requirements.",
-            "Updated game interfaces and art styles (reskinning) to match with current trends and enhance player experience upon request from leader.",
-            "Optimized game features for a smoother user experience: utilizing Unity Addressables for faster load times and stable FPS, displaying tutorial videos from YouTube through advanced techniques, enhanced scroll view performance by switching to Fancy Scrollview.",
-            ""
-          ],
-          featuredMinigames: [
-
+            "Collaborated with Product Owners, Game Designers, Artists, and QA teams to develop engaging two-player competitive minigames, ensuring gameplay aligned with requirements.",
+            "Updated game interfaces and art styles (reskinning) to match with current trends upon request from leader.",
+            "Optimized game features for a smoother user experience: utilizing Unity Addressables for faster load times, displaying tutorial videos from YouTube quickly, enhanced scrollview smoothness by switching to FancyScrollview.",
+            "Handled minigames: Pizza Memory, Fruit Duel, Paint Fight, Happy Bird, Memory, Dots Boxes, Mancala."
           ],
           tech:["Teamwork","Problem Solving","Strategy Games", " Peformance Optimizing"],
           url: "https://play.google.com/store/apps/details?id=com.two.player.arcade.games",
           videoID: "scFUag19N7s"
         },
         {
-          title: "Melon Playground [Deprecated]",
+          title: "Among Us vs Spider [Not Available on Google Play]",
+          date: "July 2023",
+          desc: [
+            "Hotfixing bugs and issues.",
+            "Implemented a system to randomly spawn enemies within set limits.",
+            "Developed a level unlocking system based on collecting resources, making gameplay more engaging for players."
+          ],
+          tech: ["Hotfix","Maintain"],
+          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
+          //videoID: "B23FbYgn640"
+        },
+        {
+          title: "Melon Playground [Not Available on Google Play]",
           date: "Oct 2022 - Dec 2022",
           desc: [
             "Design and develop weapons system and items system from scratch",
@@ -261,7 +270,7 @@ const scholarshipSection = {
     {
       title: "Academic Encouragement Scholarship HCMUTE",
       subtitle:
-        "Awarded the scholarship 4 out of 6 semesters for outstanding academic performance.",
+        "Awarded the scholarship 4 out of 7 semesters for outstanding academic performance.",
       image: require("./assets/images/hcmuteLogo.png"),
       imageAlt: "Academic Encouragement Scholarship HCMUTE",
       footerLink: [
@@ -471,7 +480,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
