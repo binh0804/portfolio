@@ -14,7 +14,8 @@ export default function GithubRepoCard({repo, isDark}) {
   }
 
   return (
-    <Fade bottom duration={1000} distance="20px">
+    
+    <Fade left duration={1000} distance="20px">
       <div>
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}

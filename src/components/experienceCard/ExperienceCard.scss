@@ -143,6 +143,27 @@
     border-radius: 8px;
     overflow: hidden;
 
+    //Text tech-stack is the same to description, children are classes tech-span placed in a box with a border and shadow, fixed with text and place next to each other
+    .tech-stack {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 15px;
+      margin: 0;
+      margin-bottom: 20px;
+      list-style-type: none;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    .tech-span {
+      margin: 0px 5px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      background-color: $lightBackground1;
+      font-size: 15px;
+    }
     .video-container {
       position: relative;
       width: 40%; // Chiều rộng tối đa của container
@@ -168,6 +189,11 @@
       flex-direction: column;
       justify-content: center;
     }
+    
+    .fab
+    {
+      padding-left: 20px;
+    }
 
     h5 {
       font-size: 1.875rem;
@@ -185,6 +211,8 @@
         margin-bottom: 10px;
         color: $textColor;
         line-height: 1.5;
+        //Canh đều
+        // text-align: justify !important;
       }
     }
 

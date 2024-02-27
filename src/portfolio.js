@@ -23,9 +23,9 @@ const greeting = {
   username: "Phuc-Binh Pham",
   title:(
     <>
-      Hi all, I'm Binh,
+      Hi all, I'm Phuc-Binh Pham,
       <br />
-      Phuc-Binh Pham
+      You can call me Pinky
     </>
   ),
   subTitle: emoji(
@@ -139,39 +139,44 @@ const workExperiences = {
       // list of work projects, each project include title, list of description, and url for each
       projs: [
         {
+          title: "Two Player Arcade Games",
+          date: "Nov 2022 - Feb 2024",
+          desc: [
+            "Collaborated with Product Owners, Game Designers, Artists, and QA teams to develop engaging two-player competitive minigames, ensuring gameplay was polished and aligned with requirements.",
+            "Updated game interfaces and art styles (reskinning) to match with current trends and enhance player experience upon request from leader.",
+            "Optimized game features for a smoother user experience: utilizing Unity Addressables for faster load times and stable FPS, displaying tutorial videos from YouTube through advanced techniques, enhanced scroll view performance by switching to Fancy Scrollview.",
+            ""
+          ],
+          featuredMinigames: [
+
+          ],
+          tech:["Teamwork","Problem Solving","Strategy Games", " Peformance Optimizing"],
+          url: "https://play.google.com/store/apps/details?id=com.two.player.arcade.games",
+          videoID: "scFUag19N7s"
+        },
+        {
+          title: "Melon Playground [Deprecated]",
+          date: "Oct 2022 - Dec 2022",
+          desc: [
+            "Design and develop weapons system and items system from scratch",
+            "Implement sound and visual effects for weapons including guns, bombs, swords, etc.",
+            "Build games to Android platform, conducted testing, and resolved issues for optimal performance."
+          ],
+          tech: ["System Design","Inventory System","Game Development"],
+          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
+          //videoID: "B23FbYgn640"
+        },
+        {
           title: "Apple Worm",
           date: "Aug 2022 - Sep 2022",
           desc: [
             "Designed and implemented 100 levels with intuitive hint, enhancing game complexity, player experience and satisfaction.",
             "Conducted comprehensive testing to identify and resolve bugs and gameplay issues before release, significantly improving game performance and stability."
           ],
+          tech: ["Level Design","Manual Testing"],
           url: "https://play.google.com/store/apps/details?id=com.fc.be.pl.snake.worm.apple",
-          videoID: "B23FbYgn640"
-        },
-        {
-          title: "Melon Playground",
-          date: "Oct 2022 - Dec 2022",
-          desc: [
-            "Design and develop weapon and item systems, sound, and effects.",
-            "Build games to Android platform, conducted testing, and resolved issues for optimal performance."
-          ],
-          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
-          //videoID: "B23FbYgn640"
-        },
-        {
-          title: "Two Player Arcade Games",
-          date: "Aug 2022 - Sep 2022",
-          desc: [
-            "Developed a hyper-casual game with 10 levels.",
-            "Implemented the game's logic, UI, and animations."
-          ],
-          url: "https://play.google.com/store/apps/details?id=com.two.player.arcade.games",
-          videoID: "OBo1oOm8nlQ?si=l_KGCOIWbCwL8ZoR"
+          videoID: "x_RJSFUPRlo"
         }
-      ],
-      descBullets: [
-        "02 Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "02 Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     }
   ]

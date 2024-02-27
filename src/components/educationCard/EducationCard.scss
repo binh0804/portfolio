@@ -140,3 +140,16 @@
     margin: auto;
   }
 }
+
+
+@media (max-width: 480px) {
+  .education-roundedimg {
+    width: 4rem;
+    height: 4rem;
+    margin: (10px 0px);
+  }
+
+  h1.education-heading {
+    margin: (30px 0px 0px 0px);
+  }
+}
