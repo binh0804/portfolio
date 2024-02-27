@@ -81,7 +81,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -106,7 +106,6 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -121,6 +120,7 @@ const techStack = {
       progressPercentage: "60%"
     }
   ],
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
@@ -186,6 +186,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
+  subTitle: "Some projects I have worked on at University",
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
@@ -220,6 +221,70 @@ const bigProjects = {
       ]
     }
   ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+
+// Scholarship Section
+// Similar Achievement Section but for Scholarships and Honor
+const scholarshipSection = {
+  title: emoji("Scholarships and Awards 🎓 "),
+  subtitle:
+    "Scholarships and Awards that I have accomplished",
+  scholarshipsCard: [
+    {
+      title: "Vallet Scholarship 2023",
+      subtitle:
+        "Scholarships are awarded to Vietnamese students who excel in their studies and research.",
+      image: require("./assets/images/vallet-scholarship.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Scholarship",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "Vallet Scholarship 2022",
+      subtitle:
+        "Scholarships are awarded to Vietnamese students who excel in their studies and research.",
+      image: require("./assets/images/vallet-scholarship.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Scholarship",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "Academic Encouragement Scholarship HCMUTE",
+      subtitle:
+        "Awarded the scholarship 4 out of 6 semesters for outstanding academic performance.",
+      image: require("./assets/images/hcmuteLogo.png"),
+      imageAlt: "Academic Encouragement Scholarship HCMUTE",
+      footerLink: [
+        {
+          name: "Scholarship",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "Student of 5 Merits HCMUTE 2021 & 2022",
+      subtitle:
+        "Recognizing outstanding students who excel in five areas: academic performance, morality, skills, integration, and physicality.",
+      image: require("./assets/images/StudentOf5Merits_HCMUTE.png"),
+      imageAlt: "Student of 5 Merits Award HCMUTE",
+      footerLink: [
+        {
+          name: "Award",
+          url: ""
+        }
+      ]
+    }
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -229,54 +294,136 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Competition Prize, Certifications and Some Cool Stuff that I have done!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Hackathon HCMUTE 2023",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Our team created a tool that automatically generates quizzes from lectures/books using ChatGPT and Google Forms API.",
+      image: require("./assets/images/Hackathon_HCMUTE_2023.png"),
+      imageAlt: "Hackathon HCMUTE 2023 Logo",
+      footerLink: [
+        {
+          name: "Competition",
+          url: ""
+        },
+        {
+          name: "Hackathon",
+          url: ""
+        },
+        {
+          name: "2nd Prize",
+          url: "",
+        }
+      ]
+    },
+    {
+      title: "Hackathon HCMUTE 2022",
+      subtitle:
+        "Developed face-blurring software in a 24-hour coding challenge to protect witness identities in investigative videos.",
+      image: require("./assets/images/Hackathon_HCMUTE_2022.png"),
+      imageAlt: "Hackathon HCMUTE 2022 Logo",
+      footerLink: [
+        {
+          name: "Competition",
+          url: ""
+        },
+        {
+          name: "Hackathon",
+          url: ""
+        },
+        {
+          name: "3rd Prize",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "MasteringIT HCMUTE 2023",
+      subtitle:
+        "A comprehensive IT knowledge competition covering various technology fields.",
+      image: require("./assets/images/MasteringIT_HCMUTE_2023.jpg"),
+      imageAlt: "MasteringIT HCMUTE 2023 Logo",
+      footerLink: [
+        {
+          name: "Competition",
+          url: ""
+        },
+        {
+          name: "Consolation Prize",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "MasteringIT HCMUTE 2022",
+      subtitle:
+        "A comprehensive IT knowledge competition covering various technology fields.",
+      image: require("./assets/images/MasteringIT_HCMUTE_2022.jpg"),
+      imageAlt: "MasteringIT HCMUTE 2022 Logo",
+      footerLink: [
+        {
+          name: "Competition",
+          url: ""
+        },
+        {
+          name: "1st Prize",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "Fundamentals of Digital Image and Video Processing",
+      subtitle: "Covering the basics of image/video processing, practical applications, and the use of modern techniques for enhancement, recovery, and compression.",
+      image: require("./assets/images/NorthwesternUniversity.png"),
+      imageAlt: "Northwestern University Logo",
+      footerLink: [
+        {
+          name: "Certification", 
+          url: "https://coursera.org/share/9473f23bd26ac41aadc311fa31ab97b5"
+        },
+        {
+          name: "Image Processing",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "Python Data Structures",
+      subtitle:
+        "Learned how to organize data, work with files, and use Python for sorting and storing information in a short course.",
+      image: require("./assets/images/UniversityofMichigan.png"),
+      imageAlt: "University of Michigan Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://coursera.org/share/a034473299fdccbc6797a9ac45fc9c3c"
         },
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          name: "Python",
+          url: ""
         },
         {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Data Structures",
+          url: ""
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "SQL for Data Science",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "A course focused on using SQL for data filtering, sorting, analysis, creating unified tables with UNION, and formatting data for analysis.",
+      image: require("./assets/images/UCDavis.png"),
+      imageAlt: "University of California, Davis Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
+          name: "Certification",
+          url: "https://coursera.org/share/af62c77b76a92f6af638ab2f84ad50d4"
+        },
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "SQL",
+          url: ""
         }
       ]
     }
@@ -305,7 +452,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -352,7 +499,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -369,6 +516,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  scholarshipSection,
   blogSection,
   talkSection,
   podcastSection,

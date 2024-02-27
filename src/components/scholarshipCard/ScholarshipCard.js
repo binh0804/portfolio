@@ -1,7 +1,7 @@
 import React from "react";
-import "./AchievementCard.scss";
+import "./ScholarshipCard.scss";
 
-export default function AchievementCard({cardInfo, isDark}) {
+export default function ScholarshipCard({ cardInfo, isDark }) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);

@@ -47,6 +47,14 @@ export default function Projects() {
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
           <h1 className="project-title">GitHub Projects</h1>
+          <p
+            className={
+              isDark
+                ? "projects-subtitle dark-mode-text"
+                : "projects-subtitle"
+            }
+          >{openSource.subTitle}
+          </p>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {

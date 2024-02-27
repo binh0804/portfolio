@@ -1,6 +1,16 @@
+@import "../../_globalColor";
 .project-title {
   font-size: 52px;
   font-weight: 400;
+  line-height: normal;
+}
+
+.projects-subtitle {
+  color: $subTitle;
+  text-transform: uppercase !important;
+  font-size: 15px;
+  margin: 0px;
+  padding-top: 1rem;
   line-height: normal;
 }
 
