@@ -15,7 +15,8 @@
   text-decoration: none;
 }
 .splash-title {
-  font-family: "Agustina Regular", cursive;
+  /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+  font-family: "Nunito", cursive;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;

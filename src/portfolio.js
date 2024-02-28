@@ -31,9 +31,9 @@ const greeting = {
   subTitle: emoji(
     "Enthusiastic Unity Game Developer 🎮 "
   ),
-  subTitle2: "Fueled by passion, awakened with coffee☕.",
+  subTitle2: "Fueled by passion, energized by coffee☕.",
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/16NwDnQcG0A4jjkqvVICLlApoCdXgfCfa/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -134,7 +134,7 @@ const workExperiences = {
       company: "HDGames",
       companylogo: require("./assets/images/HDGamesLogo.png"),
       date: "Sep 2022 – Feb 2024",
-      desc: "Developing and maintaining games in the casual genre (hyper-casual and puzzle).",
+      desc: "Collaborate with Game Designers, Game Artists, and QA to create games in the casual genre (hyper-casual and puzzle). Maintain and develop new features for existing projects as needed.",
       duration: "1 year 5 months",
       // list of work projects, each project include title, list of description, and url for each
       projs: [
@@ -143,11 +143,11 @@ const workExperiences = {
           date: "Nov 2022 - Feb 2024",
           desc: [
             "Collaborated with Product Owners, Game Designers, Artists, and QA teams to develop engaging two-player competitive minigames, ensuring gameplay aligned with requirements.",
-            "Updated game interfaces and art styles (reskinning) to match with current trends upon request from leader.",
-            "Optimized game features for a smoother user experience: utilizing Unity Addressables for faster load times, displaying tutorial videos from YouTube quickly, enhanced scrollview smoothness by switching to FancyScrollview.",
-            "Handled minigames: Pizza Memory, Fruit Duel, Paint Fight, Happy Bird, Memory, Dots Boxes, Mancala."
+            "Updated game interfaces and art styles (reskinning) to match current trends upon request from the leader.",
+            "Optimized game features for better user experience: utilizing Unity Addressables for faster load times, displaying tutorial videos from YouTube quickly, and enhanced scroll view smoothness by switching to FancyScrollview.",
+            "Handled minigames: Pizza Memory, Fruit Duel, Paint Fight, Happy Bird, Memory, Dots Boxes, and Mancala."
           ],
-          tech:["Teamwork","Problem Solving","Strategy Games", " Peformance Optimizing"],
+          tech:["Teamwork","Problem Solving","Strategy Games", "Performance Optimization"],
           url: "https://play.google.com/store/apps/details?id=com.two.player.arcade.games",
           videoID: "scFUag19N7s"
         },
@@ -157,9 +157,9 @@ const workExperiences = {
           desc: [
             "Hotfixing bugs and issues.",
             "Implemented a system to randomly spawn enemies within set limits.",
-            "Developed a level unlocking system based on collecting resources, making gameplay more engaging for players."
+            "Developed a level-unlocking system based on collecting resources, making gameplay more engaging for players."
           ],
-          tech: ["Hotfix","Maintain"],
+          tech: ["Hotfix","Maintenance"],
           //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
           //videoID: "B23FbYgn640"
         },
@@ -168,7 +168,7 @@ const workExperiences = {
           date: "Oct 2022 - Dec 2022",
           desc: [
             "Design and develop weapons system and items system from scratch",
-            "Implement sound and visual effects for weapons including guns, bombs, swords, etc.",
+            "Implement sound and visual effects for weapons: guns, bombs, swords, etc.",
             "Build games to Android platform, conducted testing, and resolved issues for optimal performance."
           ],
           tech: ["System Design","Inventory System","Game Development"],
@@ -179,8 +179,8 @@ const workExperiences = {
           title: "Apple Worm",
           date: "Aug 2022 - Sep 2022",
           desc: [
-            "Designed and implemented 100 levels with intuitive hint, enhancing game complexity, player experience and satisfaction.",
-            "Conducted comprehensive testing to identify and resolve bugs and gameplay issues before release, significantly improving game performance and stability."
+            "Designed and implemented 100 levels with intuitive hints, enhancing game complexity, player experience and satisfaction.",
+            "Conducted comprehensive testing to identify and resolve bugs and gameplay issues, significantly improving game performance and stability."
           ],
           tech: ["Level Design","Manual Testing"],
           url: "https://play.google.com/store/apps/details?id=com.fc.be.pl.snake.worm.apple",
@@ -352,7 +352,7 @@ const achievementSection = {
       title: "MasteringIT HCMUTE 2023",
       subtitle:
         "A comprehensive IT knowledge competition covering various technology fields.",
-      image: require("./assets/images/MasteringIT_HCMUTE_2023.jpg"),
+      image: require("./assets/images/Logo_MasteringIT_HCMUTE_2023.jpg"),
       imageAlt: "MasteringIT HCMUTE 2023 Logo",
       footerLink: [
         {
@@ -369,7 +369,7 @@ const achievementSection = {
       title: "MasteringIT HCMUTE 2022",
       subtitle:
         "A comprehensive IT knowledge competition covering various technology fields.",
-      image: require("./assets/images/MasteringIT_HCMUTE_2022.jpg"),
+      image: require("./assets/images/Logo_MasteringIT_HCMUTE_2022.jpg"),
       imageAlt: "MasteringIT HCMUTE 2022 Logo",
       footerLink: [
         {
