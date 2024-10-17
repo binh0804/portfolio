@@ -93,8 +93,8 @@ const educationInfo = {
       schoolName: "HCMC University of Technology and Education",
       logo: require("./assets/images/hcmuteLogo.png"),
       subHeader: "Bachelor of Infomation Technology",
-      duration: "October 2020 - Expected July 2024",
-      desc: "GPA: 9.18/10 (~3.65/4.0)",
+      duration: "October 2020 - Oct 2024",
+      desc: "GPA: 9.18/10 (3.65/4.0)",
       descBullets: [
         // "Achieved the academic scholarship for 4 out of 7 semesters",
         // "Achieved the title of \"Student of 5 Merits\" in 2020 and 2021"
@@ -129,6 +129,38 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Junior Unity Developer",
+      company: "Lapis3D Vietnam",
+      companylogo: require("./assets/images/Intratech_Logo.png"),
+      date: "March 2024 – Current",
+      desc: "",
+      //write function to calculate duration between date and current date
+      duration: "7 months",
+      // list of work projects, each project include title, list of description, and url for each
+      projs: [
+        {
+          title: "MOPIS-AM",
+          date: "Sep 2024 - Current",
+          desc: [
+            
+          ],
+          tech: ["Unity 3D","3D Transformation","Ship Building"],
+          // url: "",
+          // videoID: ""
+        },
+        {
+          title: "MOPIS",
+          date: "March 2024 - Current",
+          desc: [
+           
+          ],
+          tech: ["Unity 3D","3D Transformation","Ship Building"],
+          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
+          //videoID: "B23FbYgn640"
+        }
+      ]
+    },
     {
       role: "Unity Game Developer",
       company: "HDGames",
