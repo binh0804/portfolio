@@ -33,7 +33,7 @@ const greeting = {
   ),
   subTitle2: "Fueled by passion, energized by coffee☕.",
   resumeLink:
-    "https://drive.google.com/file/d/16NwDnQcG0A4jjkqvVICLlApoCdXgfCfa/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1e1SUZTGXHyf_LFZf_L0WwbdjZEIepjAV/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -42,7 +42,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/binh0804",
   linkedin: "https://www.linkedin.com/in/knippink/",
-  gmail: "binh08042002@gmail.com",
+  gmail: "phamphucbinh0804@gmail.com",
   facebook: "https://www.facebook.com/knippinkOwO/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -96,8 +96,7 @@ const educationInfo = {
       duration: "October 2020 - Oct 2024",
       desc: "GPA: 9.18/10 (3.65/4.0)",
       descBullets: [
-        // "Achieved the academic scholarship for 4 out of 7 semesters",
-        // "Achieved the title of \"Student of 5 Merits\" in 2020 and 2021"
+        "Graduated with High Distinction. Top 2 in the major, top 3 in the university.",
       ]
     }
   ]
@@ -134,30 +133,33 @@ const workExperiences = {
       company: "Lapis3D Vietnam",
       companylogo: require("./assets/images/Intratech_Logo.png"),
       date: "March 2024 – Current",
-      desc: "",
-      //write function to calculate duration between date and current date
-      duration: "7 months",
-      // list of work projects, each project include title, list of description, and url for each
+      companyDescription: "Lapis3D is a software development company specializing in 3D simulation applications for the shipbuilding industry.",
+      roleDetails: "Developing 3D simulation applications for the shipbuilding industry to support engineers interacting with models from the server to manage and install everything from entire ships to the smallest details.",
+      duration: "10 months",
       projs: [
         {
           title: "MOPIS-AM",
+          teamSize: "4",
           date: "Sep 2024 - Current",
           desc: [
-            
+            "Image Gallery: Import images from device storage (for both Windows and Android versions).",
+            "Image Markup: A simplified version of MS Paint.",
+            "Fix bugs or enhance the assigned features."
           ],
-          tech: ["Unity 3D","3D Transformation","Ship Building"],
-          // url: "",
-          // videoID: ""
+          tech: ["Unity 3D","3D Transformation","Ship Building","Jira & Bitbucket",],
         },
         {
           title: "MOPIS",
+          teamSize: "3",
           date: "March 2024 - Current",
           desc: [
-           
+            "Measurement Function: Chain dimensions, grid dimension, structure dimensions, enhanced with various special requirements for each dimension type.",
+            "Print function: Capture the model as a technical drawing, and export it as a PNG image.",
+            "Tube and Cable Path Improvements: Enhanced rendering for tube and cable paths for more realistic rendering.",
+            "GPS-based monitoring: Check GPS to ensure the user is inside the designated area (even in offline mode).",
+            "Fix or enhance the assigned features."
           ],
-          tech: ["Unity 3D","3D Transformation","Ship Building"],
-          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
-          //videoID: "B23FbYgn640"
+          tech: ["Unity 3D","3D Transformation","Ship Building","Jira & Bitbucket", "Azure DevOps"],
         }
       ]
     },
@@ -166,37 +168,38 @@ const workExperiences = {
       company: "HDGames",
       companylogo: require("./assets/images/HDGamesLogo.png"),
       date: "Sep 2022 – Feb 2024",
-      desc: "Collaborate with Game Designers, Game Artists, and QA to create games in the casual genre (hyper-casual and puzzle). Maintain and develop new features for existing projects as needed.",
+      companyDescription: "HDGames is a game development company specializing in casual games for mobile devices.",
+      roleDetails: "Collaborate with Game Designers, Game Artists, and QA to create games in the casual genre (hyper-casual and puzzle). Maintain and develop new features for existing projects as needed.",
       duration: "1 year 5 months",
       // list of work projects, each project include title, list of description, and url for each
       projs: [
         {
           title: "Two Player Arcade Games",
           date: "Nov 2022 - Feb 2024",
+          teamSize: "13 (1 PM, 6 Developers, 2 Artist, 1 Game Designer, 2 QA, 1 Monetization)",
           desc: [
             "Collaborated with Product Owners, Game Designers, Artists, and QA teams to develop engaging two-player competitive minigames, ensuring gameplay aligned with requirements.",
-            "Updated game interfaces and art styles (reskinning) to match current trends upon request from the leader.",
-            "Optimized game features for better user experience: utilizing Unity Addressables for faster load times, displaying tutorial videos from YouTube quickly, and enhanced scroll view smoothness by switching to FancyScrollview.",
+            "Updated game UI and art styles (reskinning) to match current trends upon request from the leader.",
+            "Optimize game features for a smoother user experience: utilizing Unity Addressables for faster load times, displaying tutorial videos from YouTube quickly, enhanced scrollview smoothness.",
             "Handled minigames: Pizza Memory, Fruit Duel, Paint Fight, Happy Bird, Memory, Dots Boxes, and Mancala."
           ],
           tech:["Teamwork","Problem Solving","Strategy Games", "Performance Optimization"],
-          url: "https://play.google.com/store/apps/details?id=com.two.player.arcade.games",
+          url: "https://play.google.com/store/apps/details?id=com.fc.be.pl.tow.player.challenge.minigames",
           videoID: "scFUag19N7s"
         },
         {
-          title: "Among Us vs Spider [Not Available on Google Play]",
+          title: "Among Us vs Spider",
           date: "July 2023",
+          teamSize: "8 (1 PM, 2 Developers, 2 Artist, 1 Game Designer, 2 QA)",
           desc: [
             "Hotfixing bugs and issues.",
             "Implemented a system to randomly spawn enemies within set limits.",
             "Developed a level-unlocking system based on collecting resources, making gameplay more engaging for players."
           ],
           tech: ["Hotfix","Maintenance"],
-          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
-          //videoID: "B23FbYgn640"
         },
         {
-          title: "Melon Playground [Not Available on Google Play]",
+          title: "Melon Playground (Learning Project)",
           date: "Oct 2022 - Dec 2022",
           desc: [
             "Design and develop weapons system and items system from scratch",
@@ -204,18 +207,16 @@ const workExperiences = {
             "Build games to Android platform, conducted testing, and resolved issues for optimal performance."
           ],
           tech: ["System Design","Inventory System","Game Development"],
-          //url: "https://play.google.com/store/apps/details?id=com.hdgames.puzzlegame",
-          //videoID: "B23FbYgn640"
         },
         {
           title: "Apple Worm",
           date: "Aug 2022 - Sep 2022",
+          teamSize: "3 (1 PM, 2 Developers)",
           desc: [
             "Designed and implemented 100 levels with intuitive hints, enhancing game complexity, player experience and satisfaction.",
             "Conducted comprehensive testing to identify and resolve bugs and gameplay issues, significantly improving game performance and stability."
           ],
           tech: ["Level Design","Manual Testing"],
-          url: "https://play.google.com/store/apps/details?id=com.fc.be.pl.snake.worm.apple",
           videoID: "x_RJSFUPRlo"
         }
       ]
@@ -346,6 +347,10 @@ const achievementSection = {
       imageAlt: "Hackathon HCMUTE 2023 Logo",
       footerLink: [
         {
+          name: "2nd Prize",
+          url: "",
+        },
+        {
           name: "Competition",
           url: ""
         },
@@ -353,10 +358,6 @@ const achievementSection = {
           name: "Hackathon",
           url: ""
         },
-        {
-          name: "2nd Prize",
-          url: "",
-        }
       ]
     },
     {
@@ -367,6 +368,10 @@ const achievementSection = {
       imageAlt: "Hackathon HCMUTE 2022 Logo",
       footerLink: [
         {
+          name: "3rd Prize",
+          url: ""
+        },
+        {
           name: "Competition",
           url: ""
         },
@@ -374,10 +379,6 @@ const achievementSection = {
           name: "Hackathon",
           url: ""
         },
-        {
-          name: "3rd Prize",
-          url: ""
-        }
       ]
     },
     {
@@ -405,13 +406,14 @@ const achievementSection = {
       imageAlt: "MasteringIT HCMUTE 2022 Logo",
       footerLink: [
         {
-          name: "Competition",
+          name: "1st Prize",
           url: ""
         },
         {
-          name: "1st Prize",
+          name: "Competition",
           url: ""
-        }
+        },
+
       ]
     },
     {
@@ -533,7 +535,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+84 522 942 441",
-  email_address: "binh08042002@gmail.com"
+  email_address: "phucbinh0804@gmail.com"
 };
 
 // Twitter Section

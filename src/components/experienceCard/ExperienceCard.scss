@@ -133,6 +133,15 @@
   // padding-top: 1.5rem;
   line-height: normal;
 }
+.company-description {
+  text-align: center;
+  font-weight: 700;
+}
+.team-size {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+}
 //tech-span dark-mode-text
 
 
@@ -144,7 +153,7 @@
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; 
 
     //Text tech-stack is the same to description, children are classes tech-span placed in a box with a border and shadow, fixed with text and place next to each other
     .tech-stack {
@@ -156,6 +165,7 @@
       margin-bottom: 20px;
       list-style-type: none;
       font-size: 20px;
+      line-height: 1.5;
       line-height: 1.5;
     }
     

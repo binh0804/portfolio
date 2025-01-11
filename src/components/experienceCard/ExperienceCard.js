@@ -28,7 +28,6 @@ export default function ExperienceCard({ cardInfo, isDark }) {
                   width="560"
                   height="315"
                   src={`https://www.youtube.com/embed/${prj.videoID}?rel=0&controls=0&showinfo=0`}
-                  //allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                   title={prj.title}
                 />
@@ -36,6 +35,10 @@ export default function ExperienceCard({ cardInfo, isDark }) {
             )}
             <div className={isDark ? "description dark-mode-text" : "description"}>
               <h5>{prj.date} : {prj.title}</h5>
+              <p className={isDark ? "team-size dark-mode-text" : "team-size"}>
+                {prj.teamSize !== "" && prj.teamSize !== undefined && prj.teamSize !== null && prj.teamSize !== "0" ?
+                "Team Size: "+prj.teamSize : ""}
+              </p>
               <ul>
                 {prj.desc.map((description, index) => (
                   <li className={isDark ? "description dark-mode-text" : "description"} 
@@ -114,7 +117,16 @@ export default function ExperienceCard({ cardInfo, isDark }) {
               : "subTitle experience-text-desc"
           }
         >
-          {cardInfo.duration}
+          ({cardInfo.duration})
+        </p>
+        <p
+          className={
+            isDark
+              ? "subTitle company-description dark-mode-text"
+              : "subTitle company-description"
+          }
+        >
+          {cardInfo.companyDescription}
         </p>
         <p
           className={
@@ -123,7 +135,7 @@ export default function ExperienceCard({ cardInfo, isDark }) {
               : "subTitle experience-text-desc"
           }
         >
-          {cardInfo.desc}
+          {cardInfo.roleDetails}
         </p>
         <h5 
           className={
