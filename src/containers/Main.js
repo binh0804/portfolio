@@ -52,6 +52,7 @@ const Main = () => {
         ) : (
           <>
             <Header />
+            <body>
             <Greeting />
             <Skills />
             <StackProgress />
@@ -68,6 +69,8 @@ const Main = () => {
             <Profile />
             <Footer />
             <ScrollToTopButton />
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4837048737766159" crossorigin="anonymous"></script>
+            </body>
           </>
         )}
       </StyleProvider>
