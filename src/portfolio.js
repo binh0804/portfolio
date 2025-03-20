@@ -33,7 +33,7 @@ const greeting = {
   ),
   subTitle2: "Fueled by passion, energized by coffee☕.",
   resumeLink:
-    "https://drive.google.com/file/d/1e1SUZTGXHyf_LFZf_L0WwbdjZEIepjAV/view", // Set to empty to hide the button
+    "https://drive.google.com/file/d/15oznA774haxVjdGZSIlHPWKgzkD3TCEY/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
