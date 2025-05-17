@@ -130,16 +130,16 @@ const workExperiences = {
   experience: [
     {
       role: "Junior Unity Developer",
-      company: "Lapis3D Vietnam",
+      company: "Intratech (Lapis3D Vietnam)",
       companylogo: require("./assets/images/Intratech_Logo.png"),
-      date: "March 2024 – Current",
+      date: "March 2024 – May 2025",
       companyDescription: "Lapis3D is a software development company specializing in 3D simulation applications for the shipbuilding industry.",
-      roleDetails: "Developing 3D simulation applications for the shipbuilding industry to support engineers interacting with models from the server to manage and install everything from entire ships to the smallest details.",
-      duration: "10 months",
+      roleDetails: "Developing 3D simulation applications (using Unity Engine) for the shipbuilding industry to support engineers\n interacting with models from the server to manage and install everything from entire ships to the smallest details.",
+      duration: "1 year 2 months",
       projs: [
         {
           title: "MOPIS-AM",
-          teamSize: "4",
+          teamSize: "4 (2 Unity developers)",
           date: "Sep 2024 - Current",
           desc: [
             "Image Gallery: Import images from device storage (for both Windows and Android versions).",
@@ -150,14 +150,14 @@ const workExperiences = {
         },
         {
           title: "MOPIS",
-          teamSize: "3",
+          teamSize: "6 (4 Unity developers)",
           date: "March 2024 - Current",
           desc: [
             "Measurement Function: Chain dimensions, grid dimension, structure dimensions, enhanced with various special requirements for each dimension type.",
             "Print function: Capture the model as a technical drawing, and export it as a PNG image.",
             "Tube and Cable Path Improvements: Enhanced rendering for tube and cable paths for more realistic rendering.",
             "GPS-based monitoring: Check GPS to ensure the user is inside the designated area (even in offline mode).",
-            "Fix or enhance the assigned features."
+            "Fix or enhance the features follow customer's requirements."
           ],
           tech: ["Unity 3D","3D Transformation","Ship Building","Jira & Bitbucket", "Azure DevOps"],
         }
@@ -334,11 +334,32 @@ const scholarshipSection = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements 🏆 "),
   subtitle:
-    "Competition Prize, Certifications and Some Cool Stuff that I have done!",
+    "Some cool achievements that I've got!",
 
   achievementsCards: [
+    {
+      title: "Global Game Jam Vietnam 2025",
+      subtitle:
+        "Third prize - team Đại Đi",
+      image: require("./assets/images/globalGameJam2025Logo.jpg"),
+      imageAlt: "Global Game Jam Vietnam 2025 Logo",
+      footerLink: [
+        {
+          name: "3rd Prize",
+          url: "",
+        },
+        {
+          name: "Competition",
+          url: ""
+        },
+        {
+          name: "Game Jam",
+          url: ""
+        },
+      ]
+    },
     {
       title: "Hackathon HCMUTE 2023",
       subtitle:
@@ -415,7 +436,16 @@ const achievementSection = {
         },
 
       ]
-    },
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+const certificationSection = {
+  title: emoji("Certifications 🏆 "),
+  subtitle:
+    "Certifications and Some Cool Stuff that I have done!",
+
+  certificationCards: [
     {
       title: "Fundamentals of Digital Image and Video Processing",
       subtitle: "Covering the basics of image/video processing, practical applications, and the use of modern techniques for enhancement, recovery, and compression.",
@@ -471,7 +501,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
@@ -559,6 +589,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  certificationSection,
   scholarshipSection,
   blogSection,
   talkSection,
