@@ -1,6 +1,8 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThreads } from '@fortawesome/free-brands-svg-icons';
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -127,6 +129,19 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.threads ? (
+        <a
+          href={socialMediaLinks.threads}
+          className="icon-button threads"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faThreads} className="fa-threads" />
+          <span></span>
+        </a>
+      ) : null}
+
     </div>
   );
 }

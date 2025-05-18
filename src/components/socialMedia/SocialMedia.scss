@@ -2,6 +2,9 @@
 
 .social-media-div {
   font-size: 2em;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
 }
 
 .icon-button {
@@ -68,6 +71,36 @@
   background-color: $instagram;
 }
 
+.threads i {
+  background-color: $threads;
+  align-self: flex-start;
+  justify-self: center;
+}
+.fa-threads {
+  color: #fff;
+  background-color: #000;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  // margin-top: 30px;
+  transition: 0.2s ease-in;
+}
+.fa-threads path {
+  //Small icon, decrease the size
+  transform: scale(0.5);
+  transform-origin: center;
+}
+
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
@@ -78,6 +111,7 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
+.threads i:hover,
 .medium i:hover {
   background-color: $textColor;
 }

@@ -44,6 +44,8 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/knippink/",
   gmail: "phamphucbinh0804@gmail.com",
   facebook: "https://www.facebook.com/knippinkOwO/",
+  instagram: "https://www.instagram.com/pinkydapoetry/",
+  // threads: "https://www.threads.com/@knippink_owo",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -134,7 +136,7 @@ const workExperiences = {
       companylogo: require("./assets/images/Intratech_Logo.png"),
       date: "March 2024 – May 2025",
       companyDescription: "Lapis3D is a software development company specializing in 3D simulation applications for the shipbuilding industry.",
-      roleDetails: "Developing 3D simulation applications (using Unity Engine) for the shipbuilding industry to support engineers\n interacting with models from the server to manage and install everything from entire ships to the smallest details.",
+      roleDetails: `Developing 3D simulation applications (using Unity Engine) for the shipbuilding industry to support engineers\n interacting with models from the server to manage and install everything from entire ships to the smallest details.`,
       duration: "1 year 2 months",
       projs: [
         {
@@ -230,7 +232,7 @@ To know how to get github key look at readme.md */
 const openSource = {
   subTitle: "Some projects I have worked on at University",
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -561,7 +563,7 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me 📱"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+84 522 942 441",
